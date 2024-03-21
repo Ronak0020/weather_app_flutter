@@ -14,7 +14,7 @@ class API {
   Future<WeatherData> fetchData(String location) async {
     var response = await http.get(
         Uri.parse(
-            "https://api.weatherapi.com/v1/forecast.json?key=$apiKey&q=$location&days=5&aqi=yes&alerts=yes"),
+            "https://api.weatherapi.com/v1/forecast.json?key=$apiKey&q=$location&days=3&aqi=yes&alerts=yes"),
         headers: {HttpHeaders.contentTypeHeader: "application/json"});
     var data = jsonDecode(response.body);
     weatherData = WeatherData(
