@@ -57,24 +57,6 @@ class _ForecastDataState extends State<ForecastData> {
               ],
             ),
             Divider(thickness: 1, color: Colors.grey[350],),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(width: mq.width * 0.1, child: Text(DateFormat.E().format(DateTime.fromMillisecondsSinceEpoch(widget.data!.daily[3].date * 1000)))),
-                Lottie.asset("assets/lottie/clouds.json", width: mq.width * 0.08),
-                SizedBox(width: mq.width * 0.2, child: Text("${widget.data!.daily[3].maxtemp}°/${widget.data!.daily[3].mintemp}°"))
-              ],
-            ),
-            Divider(thickness: 1, color: Colors.grey[350],),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(width: mq.width * 0.1, child: Text(DateFormat.E().format(DateTime.fromMillisecondsSinceEpoch(widget.data!.daily[4].date * 1000)))),
-                Lottie.asset("assets/lottie/clouds.json", width: mq.width * 0.08),
-                SizedBox(width: mq.width * 0.2, child: Text("${widget.data!.daily[4].maxtemp}°/${widget.data!.daily[4].mintemp}°"))
-              ],
-            ),
-            Divider(thickness: 1, color: Colors.grey[350],),
           ],
         ),
       ),

@@ -51,7 +51,7 @@ class GlobalController extends GetxController {
     _longitude.value = currentPosition.longitude;
     await getCityName();
 
-    weatherData.value = await API().fetchData(cityName().value);
+    weatherData.value = await API().fetchData(_latitude.value, _longitude.value);
     _loading.value = false;
   }
 

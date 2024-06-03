@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Weather',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, background: Colors.grey.shade200),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, surface: Colors.grey.shade200),
           useMaterial3: true,
           highlightColor: Colors.indigo.shade300,
           fontFamily: "Montserrat"),
